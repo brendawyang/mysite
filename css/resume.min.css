@@ -180,18 +180,36 @@ section.resume-section .resume-item
 }
 
 a{
-	color:#3B945E
+	color:#3B945E;
+	
 }
 
+/* unvisited link */
+a:link {
+  color: #3B945E;
 
-a:visited, a:focus{
-	color:#3B945E
 }
 
-a:active,a:hover,{
-	color:#824027
+/* visited link */
+a:visited {
+  color: #3B945E;
 }
 
+/* mouse over link */
+a:hover {
+  color: #3B945E;
+}
+
+/* selected link */
+a:active {
+  color: #ffc245;
+  padding-top: 2px;
+}
+
+a:focus {
+	color: ffc245;
+}
+	
 /* brenda added */
 
 ul.citations {
