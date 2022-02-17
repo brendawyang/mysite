@@ -1,0 +1,141 @@
+HTML SCSS JSResult Skip Results Iframe
+EDIT ON
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  min-height: 5vh;
+  background-color: #f1ede7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: coral;
+}
+
+p.wave { 
+	font-family: lust-script, sans-serif;
+	font-style: normal;
+	margin: 100px;
+	font-size: 2.5rem;
+	color: black;
+	text-transform: lowercase;
+}
+
+
+p.vertical { /* save the date text*/
+	font-family: lust-script, sans-serif;
+	font-style: normal;
+	margin: 0;
+	font-size: 2.5rem;
+	color: black;
+	text-transform: lowercase;
+}
+
+p.savethedate { /* save the date text*/
+	font-family: lust-script, sans-serif;
+	font-style: normal;
+	color: #000000;
+	margin: 0;
+	font-size: 11rem;
+	text-transform: lowercase;
+	line-height: 95%;
+}
+
+p.logos {
+	font-family: hwt-catchwords, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #000000;
+	margin: 0;
+	font-size: 11rem;
+	text-transform: lowercase;
+	line-height: 10%;
+}
+
+p.stars {
+	font-family: hwt-star-ornaments, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #000000;
+	margin: 0;
+	font-size: 11rem;
+	text-transform: lowercase;
+	line-height: 100%;
+}
+
+p.orange { /* save the date text*/
+	font-family: lust-script, sans-serif;
+	font-style: normal;
+	color: coral;
+	margin: 0;
+	font-size: 2.5rem;
+	text-transform: lowercase;
+	line-height: 100%;
+}
+
+
+h2 {
+	font-family: jeanne-moderno, serif; Inconsolata, monospace;
+  font-size: 1.6rem;
+  height: 1px;
+  width: 1px;
+  display:inline ;
+}
+
+.char {
+  // --i: calc(50% / var(--char-total));
+  --offset: calc(var(--char-index) * 3rem);
+  offset-path: path('M0,224L48,186.7C96,149,192,75,288,85.3C384,96,480,192,576,240C672,288,768,288,864,266.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z');
+  offset-distance: var(--offset);
+  position: absolute;
+  animation: move 1500ms infinite alternate forwards var(--delay, 0ms);
+}
+
+h2 {
+  &:nth-child(2) {
+    color: aquamarine;
+    
+    .char {
+      --delay: calc(var(--char-index) * 30ms);
+    }
+  }
+}
+
+@keyframes move {
+  100% {
+    // --i: 2rem;
+    offset-distance: calc(var(--offset) + 12rem);
+  }
+}
+
+path {
+  fill: transparent;
+}
+
+/* container properties */
+
+#fullwidth {
+	margin: auto;
+	width: 99%;
+	text-align: center;
+	padding-top: 200px;
+}
+
+#left{
+	margin: auto;
+	width: 60%;
+	padding: 20px;
+	text-align: left;
+}
+
+#right {
+	margin: auto;
+	width: 56%;
+	padding: 0px;
+	text-align: right;
+}
+
