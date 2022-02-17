@@ -2,6 +2,11 @@ HTML SCSS JSResult Skip Results Iframe
 EDIT ON
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 
+
+html {
+	cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="32">👻</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+}
+
 * {
   box-sizing: content-box;
 }
@@ -16,15 +21,15 @@ body {
   color: coral;
 }
 
-p.wave { 
+p.savethedate { /* save the date text*/
 	font-family: lust-script, sans-serif;
 	font-style: normal;
-	margin: 100px;
-	font-size: 2.5rem;
-	color: black;
+	color: #000000;
+	margin: 0;
+	font-size: 11rem;
 	text-transform: lowercase;
+	line-height: 95%;
 }
-
 
 p.vertical { /* save the date text*/
 	font-family: lust-script, sans-serif;
@@ -35,14 +40,15 @@ p.vertical { /* save the date text*/
 	text-transform: lowercase;
 }
 
-p.savethedate { /* save the date text*/
-	font-family: lust-script, sans-serif;
+p.note { 
+	font-family: jeanne-moderno, serif; Inconsolata, monospace;;
 	font-style: normal;
-	color: #000000;
+	color: black;
 	margin: 0;
-	font-size: 11rem;
+	font-size: 1rem;
 	text-transform: lowercase;
-	line-height: 95%;
+	line-height: 125%;
+	padding-top: 10px;
 }
 
 p.logos {
@@ -67,20 +73,34 @@ p.stars {
 	line-height: 100%;
 }
 
-p.orange { /* save the date text*/
-	font-family: lust-script, sans-serif;
-	font-style: normal;
-	color: coral;
-	margin: 0;
-	font-size: 2.5rem;
-	text-transform: lowercase;
-	line-height: 100%;
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: underline;
 }
 
 
 h2 {
-	font-family: jeanne-moderno, serif; Inconsolata, monospace;
-  font-size: 1.6rem;
+  font-family: jeanne-moderno, serif; Inconsolata, monospace;
+  font-size: 1.5rem;
   height: 1px;
   width: 1px;
   display:inline ;
